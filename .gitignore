@@ -1,0 +1,7 @@
+*.log
+*.exe
+*.xml
+*.iml
+.idea/
+.git/
+.vscode/
