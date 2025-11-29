@@ -1,5 +1,17 @@
 # StudyLLM
 
+## LLM
+大模型就是个参数超多的复杂函数
+文本需要分成若干个token，每个token可以对应一个向量，向量包含了语义信息和位置信息
+Transformer通过attention机制理解文本，从而给出精准预测
+Attention机制本质是联系语境使得每个token对应的向量更准确
+Transformer应用包含三种变体
+
+Pre-train，Instruction fine-tuning，RLHF
+微调使用是主流，训练稳定性高和数据构造难度低
+
+
+## Agent
 AI Agent = LLM + 感知 + 规划 + 记忆 + 行动（工具使用），LLM扮演了Agent的大脑，提供推理、规划等能力，Agent相当于四肢五官。
 智能体定义 感知、认知、行动三大系统
 
