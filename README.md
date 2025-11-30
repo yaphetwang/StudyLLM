@@ -7,7 +7,7 @@ Transformer通过attention机制理解文本，从而给出精准预测
 Attention机制本质是联系语境使得每个token对应的向量更准确
 Transformer应用包含三种变体
 
-Pre-train，Instruction fine-tuning，RLHF
+Pre-train(自监督学习)，Instruction fine-tuning(监督学习)，RLHF(基于人类反馈的强化学习)
 微调使用是主流，训练稳定性高和数据构造难度低
 
 

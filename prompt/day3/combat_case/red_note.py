@@ -46,6 +46,7 @@ system_prompt = """
 - 正文创作：撰写与标题相匹配的正文内容，具有强烈的浓人风格
 现在，请告诉我你是否阅读完成？下面我将提供一个主题，请为我创作相应的小红书标题和文案，谢谢～"""
 
+
 # 封装调用大模型函数
 def get_completion(user_prompt):
     messages = [{'role': 'system', 'content': system_prompt},
@@ -66,6 +67,7 @@ def get_completion(user_prompt):
     res = response.choices[0].message.content
     print(res)
     return res
+
 
 # 创建一个 Gradio 界面
 def show_gradio():
@@ -88,6 +90,7 @@ def show_gradio():
 
     # 启动应用
     demo.launch()
+
 
 if __name__ == '__main__':
     show_gradio()

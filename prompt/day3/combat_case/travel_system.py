@@ -1,6 +1,7 @@
 from openai import OpenAI
 import gradio as gr
 
+
 # 应用实战2：基于提示工程的旅游攻略系统实现
 def get_completion(messages):
     client = OpenAI(
@@ -14,6 +15,7 @@ def get_completion(messages):
         messages=messages,
     )
     return response.choices[0].message.content
+
 
 # 按钮绑定了函数，将用户提示和对应内容传进去
 def start_plan(qa1, qa2, qa3, qa4, qa5):
@@ -142,6 +144,7 @@ def start_plan(qa1, qa2, qa3, qa4, qa5):
     print(response)
     return response
 
+
 # 创建一个 Gradio 界面
 def show_gradio():
     with gr.Blocks() as demo:
@@ -175,6 +178,7 @@ def show_gradio():
 
     # 启动应用
     demo.launch()
+
 
 if __name__ == '__main__':
     show_gradio()
