@@ -26,9 +26,9 @@ prompt_template = ChatPromptTemplate.from_messages(
 # 以链的形式调用
 chain = prompt_template | client | parser
 
-# 部署为服务
+# 部署为服务，FastAPI为部署为web应用的框架
 app = FastAPI(title="基于LangChain的服务", version="V1.5", description="翻译服务")
-# 添加路由，给当前的程序添加一个访问路径
+# 添加路由，给当前的程序添加一个访问路径，将函数和访问路径一一绑定
 add_routes(app, chain, path="/tslServer")
 
 if __name__ == "__main__":

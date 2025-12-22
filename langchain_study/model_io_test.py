@@ -9,7 +9,7 @@ from langchain_core.prompts import PromptTemplate, ChatPromptTemplate, SystemMes
 
 from langchain_openai import ChatOpenAI
 
-# langchain.debug=True
+# langchain_study.debug=True
 
 # 1.构建模型包装器  聊天模型
 # model =  ChatOpenAI(api_key=os.getenv("DASHSCOPE_API_KEY"), model_name="qwen-max", base_url="https://dashscope.aliyuncs.com/compatible-mode/v1")

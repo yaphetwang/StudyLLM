@@ -8,15 +8,15 @@ from models import get_lc_model_client
 import os
 
 # 开启该参数，会输出调试信息
-# langchain.debug = True
+# langchain_study.debug = True
 
-# 环境变量添加api_key
-os.environ["LANGCHAIN_API_KEY"] = "你的API_KEY"
+# 向环境变量添加api_key
+os.environ["LANGCHAIN_API_KEY"] = "api_key"
 
 # 添加 LangSmith 跟踪器
 tracer = LangChainTracer()
 tracer.api_url = "https://api.langsmith.com"  # 强制使用正确域名
-tracer.project_name = "langchain-demo"  # 设置项目名
+tracer.project_name = "langchain_study-demo"  # 设置项目名
 console_handler = ConsoleCallbackHandler()
 
 # 获得访问大模型客户端

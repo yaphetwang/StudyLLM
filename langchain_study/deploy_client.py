@@ -1,6 +1,6 @@
 # 使用LangChain编写客户端访问我们基于LangServer的WEB服务
 # 对于其他编程语言来说，可以使用RESTful API来调用我们的服务
-"""比如在postman或者apifox中访问http://localhost:8000/tslServer/invoke
+"""比如在postman或者apiFox中访问 http://localhost:8000/tslServer/invoke
 在body中选择json，然后输入
 {
     "input":
